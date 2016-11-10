@@ -2,7 +2,7 @@
 // $icon-layout: diagonal;
 @import "icon/*.png";
 @import "compass/css3";
-@import "compass/typography";
+@import "compass";
 // @include all-icon-sprites;
 
 // 参数
@@ -37,4 +37,7 @@ a{
 
 div{
 	@include float("left");
+}
+li:last-of-type{
+	background-image: image-url("1-150110111RK19.png");
 }
