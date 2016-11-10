@@ -1,0 +1,40 @@
+@import "compass/reset";
+// $icon-layout: diagonal;
+@import "icon/*.png";
+@import "compass/css3";
+@import "compass/typography";
+// @include all-icon-sprites;
+
+// 参数
+$rooturl:"/E:/kuminson/github/test-7-learnTheSassAndCompass/";
+
+$browser-minimum-versions:("ie":"6");
+li{
+	padding-left: 30px;
+	height: 30px;
+	background-color: blue;
+	color: #FFF;
+	padding-top: 20px;
+}
+li:nth-of-type(1){
+	@include icon-sprite(icon_gongchengziliao);
+}
+
+@import "compass/reset";
+
+@mixin heightt ($nbr:20px){
+	height: $nbr;
+}
+li:nth-of-type(2){
+	@include icon-sprite(icon_suijiziliao);
+	@include heightt();
+	@include box-shadow(1px 1px 4px 4px #CCC);
+}
+
+a{
+	@include link-colors(red,blue,yellow,#CCC,green);
+}
+
+div{
+	@include float("left");
+}
